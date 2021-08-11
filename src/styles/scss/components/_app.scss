@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Oxygen:wght@300;400;700&family=Raleway:wght@400;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $base-black;
+  font-family: $base-font;
+  background-color: $body-bg-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
+}
+
+.app-container {
+  max-width: 900px;
+  padding: 1rem;
+  margin: 0 auto;
+}

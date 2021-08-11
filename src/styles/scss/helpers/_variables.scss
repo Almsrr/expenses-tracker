@@ -1,0 +1,30 @@
+// Breakpoints
+$tablet-breakpoint: 768px;
+
+// Base
+$base-black: #1a1a2e;
+$base-white: #fff;
+$primary-color: #16213e;
+$secondary-color: #0f3460;
+$highlight: #e94560;
+
+// Body
+$body-bg-color: $base-white;
+
+// Expenses
+$expense-bg-color: #ebebeb;
+$date-bg-color: $secondary-color;
+$expense-border-color: $body-bg-color;
+
+// Chart
+$chart-bg-color: $primary-color;
+$charbar-bg-color: $expense-bg-color;
+$char-fill-color: $highlight;
+
+// New expense
+$new-expense-bg-color: $primary-color;
+$btn-bg-color: $highlight;
+$btn-hover-color: #ab3347;
+
+$base-font: "Oxygen", sans-serif;
+$heading-font: Raleway, sans-serif;

@@ -1,0 +1,33 @@
+.chart-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .inner {
+    height: 100%;
+    width: 14px;
+    border-radius: 6px;
+    background-color: $charbar-bg-color;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .fill {
+      background-color: $char-fill-color;
+      width: 100%;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  .label {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-align: center;
+    height: 8%;
+    color: $base-white;
+    text-transform: uppercase;
+  }
+}
