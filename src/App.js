@@ -25,6 +25,36 @@ const data = [
     amount: 450,
     date: new Date(2021, 5, 12),
   },
+  {
+    id: "e5",
+    title: "Auto insurance",
+    amount: 250.98,
+    date: new Date(2022, 1, 1),
+  },
+  {
+    id: "e6",
+    title: "Health insurance",
+    amount: 150.02,
+    date: new Date(2022, 3, 30),
+  },
+  {
+    id: "e7",
+    title: "Child care",
+    amount: 76.1,
+    date: new Date(2022, 8, 15),
+  },
+  {
+    id: "e8",
+    title: "Home decor",
+    amount: 578.54,
+    date: new Date(2021, 12, 3),
+  },
+  {
+    id: "e9",
+    title: "Credit card payments",
+    amount: 1200.43,
+    date: new Date(2021, 8, 15),
+  },
 ];
 
 function App() {
