@@ -37,12 +37,20 @@ function ExpenseForm(props) {
     //   enteredDate: event.target.value,
     // });
   };
+  // const formatDate = (inputDate) => {
+  //   const inputDateArray = inputDate.split("-");
+  //   const inputDateArrayNumbers = inputDateArray.map((element) =>
+  //     Number(element)
+  //   );
+
+  //   return new Date(...inputDateArrayNumbers);
+  // };
   const submitHandler = (event) => {
     event.preventDefault();
 
     const expenseData = {
       title: enteredTitle,
-      amount: +enteredAmount,
+      amount: Number(enteredAmount) || 0,
       date: new Date(enteredDate),
     };
     props.onSaveExpenseData(expenseData);

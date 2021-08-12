@@ -70,7 +70,7 @@ function App() {
     <div className="app-container">
       <Header />
       <main>
-        <NewExpense onAddExpense={AddExpenseHandler} />
+        <NewExpense items={expenses} onAddExpense={AddExpenseHandler} />
         <Expenses items={expenses} />
       </main>
       <Footer />
