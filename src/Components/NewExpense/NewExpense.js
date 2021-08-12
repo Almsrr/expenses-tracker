@@ -23,17 +23,20 @@ function NewExpense(props) {
     setHiddenForm(!hiddenForm);
   };
 
+  let newExpenseContent = (
+    <button onClick={hiddenFormHandler}>Add expense</button>
+  );
+  if (!hiddenForm) {
+    newExpenseContent = (
+      <ExpenseForm
+        onSaveExpenseData={saveExpenseDataHandler}
+        onCancelNewExpense={hiddenFormHandler}
+      />
+    );
+  }
   return (
     <Card className="new-expense">
-      <div>
-        {hiddenForm && <button onClick={hiddenFormHandler}>Add expense</button>}
-        {!hiddenForm && (
-          <ExpenseForm
-            onSaveExpenseData={saveExpenseDataHandler}
-            onCancelNewExpense={hiddenFormHandler}
-          />
-        )}
-      </div>
+      <div>{newExpenseContent}</div>
     </Card>
   );
 }
