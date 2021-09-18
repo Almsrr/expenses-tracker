@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import ExpensesList from "./ExpensesList";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
   const [userFilter, setUserFilter] = useState("2021");
+  const expenses = props.items;
 
   const filterHandler = (year) => {
     setUserFilter(year);
   };
 
-  const currentExpenses = props.items;
-  const filteredExpenses = currentExpenses.filter((expense) => {
-    return expense.date.getFullYear().toString() === userFilter;
-  });
+  const filteredExpenses = useMemo(() => {
+    // console.log("items filtered");
+    return expenses.filter(
+      (expense) => expense.date.getFullYear().toString() === userFilter
+    );
+  }, [expenses, userFilter]);
 
   return (
     <div className="expenses">
